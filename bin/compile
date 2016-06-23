@@ -95,7 +95,7 @@ export INCLUDE_PATH="\$HOME/.apt/usr/include:\$INCLUDE_PATH"
 export CPATH="\$INCLUDE_PATH"
 export CPPPATH="\$INCLUDE_PATH"
 export C_INCLUDE_PATH="\$INCLUDE_PATH"
-export CPLUS_INCLUDE_PATH="\$INCLUDE_PATH"
+export CPLUS_INCLUDE_PATH="\$HOME/.apt/usr/include/poppler:\$INCLUDE_PATH"
 export PKG_CONFIG_PATH="\$HOME/.apt/usr/lib/x86_64-linux-gnu/pkgconfig:\$HOME/.apt/usr/lib/i386-linux-gnu/pkgconfig:\$HOME/.apt/usr/lib/pkgconfig:\$PKG_CONFIG_PATH"
 EOF
 
@@ -106,7 +106,7 @@ export INCLUDE_PATH="$BUILD_DIR/.apt/usr/include:$INCLUDE_PATH"
 export CPATH="$INCLUDE_PATH"
 export CPPPATH="$INCLUDE_PATH"
 export C_INCLUDE_PATH="$INCLUDE_PATH"
-export CPLUS_INCLUDE_PATH="$INCLUDE_PATH"
+export CPLUS_INCLUDE_PATH="$BUILD_DIR/.apt/usr/include:$INCLUDE_PATH:$INCLUDE_PATH"
 export PKG_CONFIG_PATH="$BUILD_DIR/.apt/usr/lib/x86_64-linux-gnu/pkgconfig:$BUILD_DIR/.apt/usr/lib/i386-linux-gnu/pkgconfig:$BUILD_DIR/.apt/usr/lib/pkgconfig:$PKG_CONFIG_PATH"
 
 #give environment to later buildpacks
