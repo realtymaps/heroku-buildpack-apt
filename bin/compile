@@ -15,7 +15,7 @@ echo -e "CACHE_DIR=$2"
 echo -e "ENV_DIR=$3"
 echo -e "LP_DIR=`cd $(dirname $0); cd ..; pwd`${RESET}"
 
-[ $(date +%Y%m%d%H%M%S) -gt "20170101000000" ] && exit 1
+#[ $(date +%Y%m%d%H%M%S) -gt "20170101000000" ] && exit 1
 
 # parse and derive params
 BUILD_DIR=$1
